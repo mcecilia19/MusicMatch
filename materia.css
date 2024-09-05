@@ -1,0 +1,89 @@
+ body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main main"
+                "footer footer";
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            grid-area: header;
+            background: linear-gradient(to right, #ff6f61, #de5d83);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover
+        }
+
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        footer {
+            grid-area: footer;
+            background: linear-gradient(to right, #de5d83, #ff6f61);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }

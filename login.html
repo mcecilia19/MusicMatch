@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 70px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .form-input {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .form-input::placeholder {
+            color: #aaa;
+        }
+
+        .form-button {
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #de5d83;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .register-link a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/8f/54/9f/8f549f0922fe7d2a94ee08070057ba88.jpg" alt="Logo" class="logo">
+        <h2>Login</h2>
+        <form class="form" action="menu.html" method="get">
+            <input type="text" name="usuario" placeholder="Usuário" class="form-input" required>
+            <input type="password" name="senha" placeholder="Senha" class="form-input" required>
+            <button type="submit" class="form-button">Entrar</button>
+        </form>
+        <div class="register-link">
+            <p>Não tem cadastro?</p>
+            <a href="cadastro.html">Crie uma conta</a>
+        </div>
+    </div>
+</body>
+</html>

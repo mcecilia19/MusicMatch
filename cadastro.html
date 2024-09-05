@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .input {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .input::placeholder {
+            color: #aaa;
+        }
+
+        .button {
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #de5d83;
+        }
+
+        .link {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .link a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/8f/54/9f/8f549f0922fe7d2a94ee08070057ba88.jpg" alt="Logo" class="logo">
+        <h2>Cadastro</h2>
+        <form class="form" action="menu.html" method="get">
+            <label for="usuario" class="label">🎧 Escolha seu nome de usuário musical.</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Nome de usuário" class="input" required>
+
+            <label for="email" class="label">📧 Deixe-nos seu e-mail para enviar os acordes e novidades!</label>
+            <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="input" required>
+
+            <label for="data" class="label">🎂 Quando foi o grande lançamento do seu álbum de nascimento? (Sua data de nascimento!)</label>
+            <input type="date" id="data" name="data" class="input" required>
+
+            <label for="senha" class="label">🔐 Crie uma senha poderosa para proteger sua conta (Como uma chave para sua própria sala de ensaio!).</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" class="input" required>
+
+            <label for="confirme-senha" class="label">🔄 Digite a senha novamente para garantir que está afinada!</label>
+            <input type="password" id="confirme-senha" name="confirme-senha" placeholder="Confirmar senha" class="input" required>
+
+            <button type="submit" class="button">Cadastrar</button>
+        </form>
+        <div class="link">
+            <p>Já tem uma conta?</p>
+            <a href="login.html">Faça login</a>
+        </div>
+    </div>
+</body>
+</html>
